@@ -10,9 +10,9 @@
 
   /* Makes The Display For The Menu Button 
  */
-  button.src = "https://o.remove.bg/downloads/bd4c7cec-44c9-43c1-bcda-c166ed52690c/menu-hamburger-button-logo-chef-menu-button-removebg-preview.png";
-  button.style.width = "80px";
-  button.style.width = "80px";
+  button.src = "../Images/menu-button.png";
+  button.style.width = "40px";
+  button.style.width = "40px";
   button.style.draggable = "false";
   document.body.insertBefore(button, body.firstChild);
 
