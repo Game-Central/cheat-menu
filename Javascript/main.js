@@ -1,4 +1,4 @@
-if (document.body.contains(document.getElementById('menuadded'))) {
+if (document.body.contains(document.getElementById('menuadded'))==true) {
   alert('Menu Already Adedd. If This Is A Mistake, Reload The Page');
 } else{
   //Variables
