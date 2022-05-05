@@ -10,7 +10,7 @@
 
   /* Makes The Display For The Menu Button 
  */
-  button.src = "../Images/menu-button.png";
+  button.src = "https://game-central.github.io/cheat-menu/Images/menu-button.png";
   button.style.width = "40px";
   button.style.width = "40px";
   button.style.draggable = "false";
