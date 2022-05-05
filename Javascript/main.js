@@ -1,27 +1,31 @@
 if (document.getElementById("menuadded")) {
   alert('Menu Already Adedd. If This Is A Mistake, Reload The Page');
 } else{
-  //Variables
+  /* Variables
+  */
   var button = document.createElement('img');
   var body = document.body || document.getElementsByTagName('body');
 
-  //Testing
-  var menuaddedtester = document.createElement('a');
-  menuaddedtester.id = "menuadded";
+  /* Testing
+  */
+  document.createElement('a').id = "menuadded";
 
-  //Makes The Display For The Menu Button 
+  /* Makes The Display For The Menu Button 
+ */
   button.src = "https://o.remove.bg/downloads/bd4c7cec-44c9-43c1-bcda-c166ed52690c/menu-hamburger-button-logo-chef-menu-button-removebg-preview.png";
   button.style.width = "80px";
   button.style.width = "80px";
   button.style.draggable = "false";
   document.body.insertBefore(button, body.firstChild);
 
-  //Menu Clicked
+  /* Menu Clicked
+  */
   button.onclick = function() {
     alert('clicked');
   };
 
-  //Menu Drag
+  /* Menu Drag
+  */
   button.onmousedown = function(event) {
     button.style.position = 'absolute';
     button.style.zIndex = 1000;
@@ -42,4 +46,4 @@ if (document.getElementById("menuadded")) {
   button.ondragstart = function() {
     return false;
   };
-}
+}l
