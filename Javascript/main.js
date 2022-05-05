@@ -5,9 +5,9 @@ if (document.getElementById("menuadded")) {
   var button = document.createElement('img');
   var body = document.body || document.getElementsByTagName('body');
 
-  //testing
+  //Testing
   var menuaddedtester = document.createElement('a');
-  menuaddedtester.id = "menuadded"
+  menuaddedtester.id = "menuadded";
 
   //Makes The Display For The Menu Button 
   button.src = "https://o.remove.bg/downloads/bd4c7cec-44c9-43c1-bcda-c166ed52690c/menu-hamburger-button-logo-chef-menu-button-removebg-preview.png";
