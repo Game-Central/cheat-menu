@@ -1,6 +1,3 @@
-if (document.getElementById("menuadded")) {
-  alert('Menu Already Adedd. If This Is A Mistake, Reload The Page');
-} else{
   /* Variables
   */
   var button = document.createElement('img');
@@ -8,7 +5,8 @@ if (document.getElementById("menuadded")) {
 
   /* Testing
   */
-  document.createElement('a').id = "menuadded";
+  var menutester = document.createElement('a');
+  menutester.setAttribute('id', 'menuadded');
 
   /* Makes The Display For The Menu Button 
  */
@@ -46,4 +44,3 @@ if (document.getElementById("menuadded")) {
   button.ondragstart = function() {
     return false;
   };
-}l
