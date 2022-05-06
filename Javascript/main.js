@@ -70,37 +70,39 @@
     return false;
   };
 
+button.addEventListener('click', menuOpenClose);
+menuclose.addEventListener('click', menuOpenClose);
 
-
-button.onclick = function() {  
+function menuOpenClose() {  
 if (menuvalue.value == "1") {
     menuvalue.value = "0";
 
 
     menu.style.width = "0px";
     menuclose.style.width = "0px";
+    menutitle.style.width = "0px";
+
   } else {
     menuvalue.value = "1";
 
 
     menu.style.width = "150px";
     menuclose.style.width = "20px";
+    menutitle.style.width = "10px";
+
   }
 };
+  
 
 
-menuclose.onclick = function() {  
-if (menuvalue.value == "1") {
-    menuvalue.value = "0";
 
+  /* Menu Contents */
 
-    menu.style.width = "0px";
-    menuclose.style.width = "0px";
-  } else {
-    menuvalue.value = "1";
-
-
-    menu.style.width = "150px";
-    menuclose.style.width = "20px";
-  }
-};
+  var menutitle = document.createElement('h3');
+  menutitle.innerHTML = "Cheat Menu 2.0";
+  menutitle.style.width = "0px";
+  menutitle.style.position = 'absolute';
+  menutitle.style.left = "0";
+  menutitle.style.top = "0";
+  menutitle.style.draggable = "false";
+  menu.insertBefore(menutitle, menu.firstChild);
