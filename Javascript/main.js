@@ -1,12 +1,12 @@
-  /* Variables
-  */
-  var button = document.createElement('img');
-  var body = document.body || document.getElementsByTagName('body');
-  var menu = document.createElement("div");
-  var menuclose = document.createElement('img');
+  /* Variables */
 
-  /* Makes The Display For The Menu 
-  */
+  var body = document.body || document.getElementsByTagName('body');
+  
+
+
+  /* Makes The Menu */
+
+  var menu = document.createElement("div");
   menu.style.width = "0px";
   menu.style.height = "100%";
   menu.style.background = "grey";
@@ -16,14 +16,27 @@
   menu.style.zIndex = "1000";
   document.body.insertBefore(menu, body.firstChild);
 
-  /* Makes The Display For The Menu Button 
-  */
+
+
+  /* Makes The Menu Button */
+
+  var menuvalue = document.createElement('button');
+  var button = document.createElement('img');
   button.src = "https://game-central.github.io/cheat-menu/Images/menu-button.png";
   button.style.width = "40px";
   button.style.width = "45px";
   button.style.draggable = "false";
+  button.style.position = 'absolute';
+  button.style.right = "0";
+  button.style.top = "0";
+  button.style.zIndex = "998";
   document.body.insertBefore(button, body.firstChild);
 
+
+
+  /* Makes The Menu Close Button */
+
+  var menuclose = document.createElement('img');
   menuclose.src = "https://game-central.github.io/cheat-menu/Images/menu-close.png";
   menuclose.style.width = "0px";
   menuclose.style.position = 'absolute';
@@ -32,19 +45,10 @@
   menuclose.style.draggable = "false";
   menu.insertBefore(menuclose, menu.firstChild);
 
-  /* Menu Clicked
-  */
-  button.onclick = function() {
-    menu.style.width = "200px";
-    menuclose.style.width = "20px";
-  };
-  menuclose.onclick = function() {
-    menu.style.width = "0px";
-    menuclose.style.width = "0px";
-  };
 
-  /* Menu Drag
-  */
+
+  /* Menu Drag */
+
   button.onmousedown = function(event) {
     button.style.position = 'absolute';
     button.style.zIndex = 100001;
@@ -65,3 +69,38 @@
   button.ondragstart = function() {
     return false;
   };
+
+
+
+button.onclick = function() {  
+if (menuvalue.value == "1") {
+    menuvalue.value = "0";
+
+
+    menu.style.width = "0px";
+    menuclose.style.width = "0px";
+  } else {
+    menuvalue.value = "1";
+
+
+    menu.style.width = "150px";
+    menuclose.style.width = "20px";
+  }
+};
+
+
+menuclose.onclick = function() {  
+if (menuvalue.value == "1") {
+    menuvalue.value = "0";
+
+
+    menu.style.width = "0px";
+    menuclose.style.width = "0px";
+  } else {
+    menuvalue.value = "1";
+
+
+    menu.style.width = "150px";
+    menuclose.style.width = "20px";
+  }
+};
