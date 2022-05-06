@@ -80,7 +80,7 @@ if (menuvalue.value == "1") {
 
     menu.style.width = "0px";
     menuclose.style.width = "0px";
-    menutitle.style.width = "0px";
+    menutitle.style.fontSize = "0px";
 
   } else {
     menuvalue.value = "1";
@@ -88,7 +88,7 @@ if (menuvalue.value == "1") {
 
     menu.style.width = "150px";
     menuclose.style.width = "20px";
-    menutitle.style.width = "10px";
+    menutitle.style.fontSize = "15px";
 
   }
 };
@@ -100,7 +100,7 @@ if (menuvalue.value == "1") {
 
   var menutitle = document.createElement('h3');
   menutitle.innerHTML = "Cheat Menu 2.0";
-  menutitle.style.width = "0px";
+  menutitle.style.fontSize = "0px";
   menutitle.style.position = 'absolute';
   menutitle.style.left = "0";
   menutitle.style.top = "0";
