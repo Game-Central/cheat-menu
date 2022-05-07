@@ -3,11 +3,11 @@
   var body = document.body || document.getElementsByTagName('body');
   
 
-
   /* Makes The Menu */
-
+  
   var menu = document.createElement("div");
-  menu.style.width = "0px";
+  menu.style.display = "none";
+  menu.style.width = "150px";
   menu.style.height = "100%";
   menu.style.background = "grey";
   menu.style.position = 'absolute';
@@ -22,6 +22,7 @@
 
   var menuvalue = document.createElement('button');
   var button = document.createElement('img');
+  menuvalue.style.display = "none";
   button.src = "https://game-central.github.io/cheat-menu/Images/menu-button.png";
   button.style.width = "40px";
   button.style.width = "45px";
@@ -38,7 +39,8 @@
 
   var menuclose = document.createElement('img');
   menuclose.src = "https://game-central.github.io/cheat-menu/Images/menu-close.png";
-  menuclose.style.width = "0px";
+  menuclose.style.display = "none";
+  menuclose.style.width = "20px";
   menuclose.style.position = 'absolute';
   menuclose.style.right = "0";
   menuclose.style.top = "0";
@@ -78,17 +80,21 @@ if (menuvalue.value == "1") {
     menuvalue.value = "0";
 
 
-    menu.style.width = "0px";
-    menuclose.style.width = "0px";
-    menutitle.style.fontSize = "0px";
+    menu.style.display = "none";
+    menuclose.style.display = "none";
+    menutitle.style.display = "none";
+    MainPageButton1.style.display = "none";
+
 
   } else {
     menuvalue.value = "1";
 
 
-    menu.style.width = "150px";
-    menuclose.style.width = "20px";
-    menutitle.style.fontSize = "15px";
+    menu.style.display = "initial";
+    menuclose.style.display = "initial";
+    menutitle.style.display = "initial";
+    MainPageButton1.style.display = "initial";
+
 
   }
 };
@@ -97,12 +103,23 @@ if (menuvalue.value == "1") {
 
 
   /* Menu Contents */
-
+  
   var menutitle = document.createElement('h3');
   menutitle.innerHTML = "Cheat Menu 2.0";
-  menutitle.style.fontSize = "0px";
+  menutitle.style.display = "none";
+  menutitle.style.fontSize = "15px";
   menutitle.style.position = 'absolute';
   menutitle.style.left = "0";
   menutitle.style.top = "0";
   menutitle.style.draggable = "false";
   menu.insertBefore(menutitle, menu.firstChild);
+
+  var MainPageButton1 = document.createElement('button');
+  MainPageButton1.innerHTML = "Cheat Menu 2.0";
+  MainPageButton1.style.display = "none";
+  MainPageButton1.style.width = "20px";
+  MainPageButton1.style.position = 'absolute';
+  MainPageButton1.style.left = "0";
+  MainPageButton1.style.top = "0";
+  MainPageButton1.style.draggable = "false";
+  menu.insertAfter(menutitle, menu.menutitle);
