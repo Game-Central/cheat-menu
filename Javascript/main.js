@@ -117,6 +117,22 @@ MainPageButtonFour.style.right = '0';
 MainPageButtonFour.style.top = '0';
 menu.insertBefore(MainPageButtonFour, menu.lastChild);
 
+var MainPageButtonFive = document.createElement('button');
+MainPageButtonFive.innerHTML = 'Notepad';
+MainPageButtonFive.style.fontSize = '15px';
+MainPageButtonFive.style.width = '100%';
+MainPageButtonFive.style.right = '0';
+MainPageButtonFive.style.top = '0';
+menu.insertBefore(MainPageButtonFive, menu.lastChild);
+
+var MainPageButtonSix = document.createElement('button');
+MainPageButtonSix.innerHTML = 'View Source';
+MainPageButtonSix.style.fontSize = '15px';
+MainPageButtonSix.style.width = '100%';
+MainPageButtonSix.style.right = '0';
+MainPageButtonSix.style.top = '0';
+menu.insertBefore(MainPageButtonSix, menu.lastChild);
+
 
 
 /* Menu Button Clicked */
@@ -128,12 +144,15 @@ MainPageButtonTwo.onclick = function () {var win;win = window.open();win.documen
 MainPageButtonThree.onclick = function () {void((function(svc) {var d = document,w = window,p = 0,b = function() {if (!p) {p = 1;if (_atc.xol) _adr.onReady();if (w.addthis_sendto) addthis_sendto(svc || 'bkmore', {product: 'bmt-' + _atc.ver})} else {p = 0;if (_atw) _atw.clb()}};if (!w._atc) {var ol = w.addthis_onload || [],o = d.createElement('script');w.addthis_product = 'bmt-250';o.src = '//s7.addthis.com/js/250/addthis_widget.js#domready=1&username=bookmarklet';ol.push(b);w.addthis_onload = ol;d.getElementsByTagName('body')[0].appendChild(o)} else b()})())};
 
 MainPageButtonFour.addEventListener("click", function () {
-
   !function () {
     for (var t = "/", o = 0; o < 50; o++)
       history.pushState(0, 0, t += o.toString())
   }();
 });
+
+MainPageButtonFive.onclick = function () {window.open('https://www.onlinetexteditor.com/', '', 'top=15,left=15,scrollbar=yes,width=500,height=450')};
+
+MainPageButtonSix.onclick = function () {var a=window.open('about:blank').document;a.write('<!DOCTYPE html><html><head><title> '+location.href+'</title><meta name="viewport" content="width=device-width" /></head><body></body></html>');a.close();var b=a.body.appendChild(a.createElement('pre'));b.style.overflow='auto';b.style.whiteSpace='pre-wrap';b.appendChild(a.createTextNode(document.documentElement.innerHTML))};
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
