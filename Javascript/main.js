@@ -72,7 +72,7 @@ menuclose.addEventListener('click', menuOpenClose);
 /* Menu Contents */
 
 var menutitle = document.createElement('h3');
-menutitle.innerHTML = 'Cheat Menu 2.0';
+menutitle.innerHTML = 'Exploit Menu 2.0';
 menutitle.style.display = 'none';
 menutitle.style.fontSize = '15px';
 menutitle.style.left = '0';
