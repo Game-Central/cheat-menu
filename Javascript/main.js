@@ -94,7 +94,7 @@ MainPageButtonOne.style.top = '0';
 menu.insertBefore(MainPageButtonOne, menu.lastChild);
 
 var MainPageButtonTwo = document.createElement('button');
-MainPageButtonTwo.innerHTML = 'test';
+MainPageButtonTwo.innerHTML = 'Page invisibilizer';
 MainPageButtonTwo.style.fontSize = '15px';
 MainPageButtonTwo.style.width = '100%';
 MainPageButtonTwo.style.right = '0';
