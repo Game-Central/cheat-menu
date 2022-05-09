@@ -84,6 +84,7 @@ var break1 = document.createElement('br');
 menu.insertBefore(break1, menu.lastChild);
 
 /* Menu Buttons */
+
 var MainPageButtonOne = document.createElement('button');
 MainPageButtonOne.innerHTML = 'Inspect Element';
 MainPageButtonOne.style.fontSize = '15px';
