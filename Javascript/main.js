@@ -101,6 +101,14 @@ MainPageButtonTwo.style.right = '0';
 MainPageButtonTwo.style.top = '0';
 menu.insertBefore(MainPageButtonTwo, menu.lastChild);
 
+var MainPageButtonThree = document.createElement('button');
+MainPageButtonThree.innerHTML = 'Share page';
+MainPageButtonThree.style.fontSize = '15px';
+MainPageButtonThree.style.width = '100%';
+MainPageButtonThree.style.right = '0';
+MainPageButtonThree.style.top = '0';
+menu.insertBefore(MainPageButtonThree, menu.lastChild);
+
 
 
 /* Menu Button Clicked */
@@ -108,6 +116,8 @@ menu.insertBefore(MainPageButtonTwo, menu.lastChild);
 MainPageButtonOne.onclick = function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);};
 
 MainPageButtonTwo.onclick = function () {var win;win = window.open();win.document.body.style.margin = "0";win.document.body.style.height = "100vh";var iframe= win.document.createElement("iframe");iframe.style.border = "none";iframe.style.width = "100%";iframe.style.height = "100%";iframe.style.margin = "0";iframe.src = window.location.href; win.document.body.appendChild(iframe)};
+
+MainPageButtonThree.onclick = function () {void((function(svc) {var d = document,w = window,p = 0,b = function() {if (!p) {p = 1;if (_atc.xol) _adr.onReady();if (w.addthis_sendto) addthis_sendto(svc || 'bkmore', {product: 'bmt-' + _atc.ver})} else {p = 0;if (_atw) _atw.clb()}};if (!w._atc) {var ol = w.addthis_onload || [],o = d.createElement('script');w.addthis_product = 'bmt-250';o.src = '//s7.addthis.com/js/250/addthis_widget.js#domready=1&username=bookmarklet';ol.push(b);w.addthis_onload = ol;d.getElementsByTagName('body')[0].appendChild(o)} else b()})())};
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
