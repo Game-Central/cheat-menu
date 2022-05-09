@@ -83,8 +83,9 @@ menu.insertBefore(menutitle, menu.firstChild);
 var break1 = document.createElement('br');
 menu.insertBefore(break1, menu.lastChild);
 
+/* Menu Buttons */
 var MainPageButtonOne = document.createElement('button');
-MainPageButtonOne.innerHTML = 'test';
+MainPageButtonOne.innerHTML = 'Inspect Element';
 MainPageButtonOne.style.fontSize = '15px';
 MainPageButtonOne.style.width = '100%';
 MainPageButtonOne.style.right = '0';
@@ -98,6 +99,10 @@ MainPageButtonTwo.style.width = '100%';
 MainPageButtonTwo.style.right = '0';
 MainPageButtonTwo.style.top = '0';
 menu.insertBefore(MainPageButtonTwo, menu.lastChild);
+
+
+
+/* Menu Button Clicked */
 
 MainPageButtonOne.onclick = function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);};
 
