@@ -109,6 +109,14 @@ MainPageButtonThree.style.right = '0';
 MainPageButtonThree.style.top = '0';
 menu.insertBefore(MainPageButtonThree, menu.lastChild);
 
+var MainPageButtonFour = document.createElement('button');
+MainPageButtonFour.innerHTML = 'History Flooder';
+MainPageButtonFour.style.fontSize = '15px';
+MainPageButtonFour.style.width = '100%';
+MainPageButtonFour.style.right = '0';
+MainPageButtonFour.style.top = '0';
+menu.insertBefore(MainPageButtonFour, menu.lastChild);
+
 
 
 /* Menu Button Clicked */
@@ -118,6 +126,14 @@ MainPageButtonOne.onclick = function () {var script=document.createElement('scri
 MainPageButtonTwo.onclick = function () {var win;win = window.open();win.document.body.style.margin = "0";win.document.body.style.height = "100vh";var iframe= win.document.createElement("iframe");iframe.style.border = "none";iframe.style.width = "100%";iframe.style.height = "100%";iframe.style.margin = "0";iframe.src = window.location.href; win.document.body.appendChild(iframe)};
 
 MainPageButtonThree.onclick = function () {void((function(svc) {var d = document,w = window,p = 0,b = function() {if (!p) {p = 1;if (_atc.xol) _adr.onReady();if (w.addthis_sendto) addthis_sendto(svc || 'bkmore', {product: 'bmt-' + _atc.ver})} else {p = 0;if (_atw) _atw.clb()}};if (!w._atc) {var ol = w.addthis_onload || [],o = d.createElement('script');w.addthis_product = 'bmt-250';o.src = '//s7.addthis.com/js/250/addthis_widget.js#domready=1&username=bookmarklet';ol.push(b);w.addthis_onload = ol;d.getElementsByTagName('body')[0].appendChild(o)} else b()})())};
+
+MainPageButtonFour.addEventListener("click", function () {
+
+  !function () {
+    for (var t = "/", o = 0; o < 50; o++)
+      history.pushState(0, 0, t += o.toString())
+  }();
+});
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
