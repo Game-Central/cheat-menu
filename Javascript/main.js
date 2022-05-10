@@ -133,6 +133,30 @@ MainPageButtonSix.style.right = '0';
 MainPageButtonSix.style.top = '0';
 menu.insertBefore(MainPageButtonSix, menu.lastChild);
 
+var MainPageButtonSeven = document.createElement('button');
+MainPageButtonSeven.innerHTML = 'Tiny Url';
+MainPageButtonSeven.style.fontSize = '15px';
+MainPageButtonSeven.style.width = '100%';
+MainPageButtonSeven.style.right = '0';
+MainPageButtonSeven.style.top = '0';
+menu.insertBefore(MainPageButtonSeven, menu.lastChild);
+
+var MainPageButtonEight = document.createElement('button');
+MainPageButtonEight.innerHTML = ' ';
+MainPageButtonEight.style.fontSize = '15px';
+MainPageButtonEight.style.width = '100%';
+MainPageButtonEight.style.right = '0';
+MainPageButtonEight.style.top = '0';
+menu.insertBefore(MainPageButtonEight, menu.lastChild);
+
+var MainPageButtonNine = document.createElement('button');
+MainPageButtonNine.innerHTML = ' ';
+MainPageButtonNine.style.fontSize = '15px';
+MainPageButtonNine.style.width = '100%';
+MainPageButtonNine.style.right = '0';
+MainPageButtonNine.style.top = '0';
+menu.insertBefore(MainPageButtonNine, menu.lastChild);
+
 
 
 /* Menu Button Clicked */
@@ -153,6 +177,11 @@ MainPageButtonFour.addEventListener("click", function () {
 MainPageButtonFive.onclick = function () {window.open('https://www.onlinetexteditor.com/', '', 'top=15,left=15,scrollbar=yes,width=500,height=450')};
 
 MainPageButtonSix.onclick = function () {var a=window.open('about:blank').document;a.write('<!DOCTYPE html><html><head><title> '+location.href+'</title><meta name="viewport" content="width=device-width" /></head><body></body></html>');a.close();var b=a.body.appendChild(a.createElement('pre'));b.style.overflow='auto';b.style.whiteSpace='pre-wrap';b.appendChild(a.createTextNode(document.documentElement.innerHTML))};
+
+MainPageButtonSeven.onclick = function () {void(open('http://tinyurl.com/create.php?url=%27+encodeURIComponent(location.href)))};
+
+MainPageButtonEight.onclick = function () {};
+MainPageButtonNine.onclick = function () {};
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
