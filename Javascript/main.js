@@ -72,9 +72,9 @@ menuclose.addEventListener('click', menuOpenClose);
 /* Menu Contents */
 
 var menutitle = document.createElement('h3');
-menutitle.innerHTML = 'Exploit Menu 2.0';
+menutitle.innerHTML = 'Bookmarklet Menu 2.0';
 menutitle.style.display = 'none';
-menutitle.style.fontSize = '15px';
+menutitle.style.fontSize = '12px';
 menutitle.style.left = '0';
 menutitle.style.top = '0';
 menutitle.style.draggable = 'false';
