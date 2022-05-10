@@ -142,7 +142,7 @@ MainPageButtonSeven.style.top = '0';
 menu.insertBefore(MainPageButtonSeven, menu.lastChild);
 
 var MainPageButtonEight = document.createElement('button');
-MainPageButtonEight.innerHTML = ' ';
+MainPageButtonEight.innerHTML = 'Blank';
 MainPageButtonEight.style.fontSize = '15px';
 MainPageButtonEight.style.width = '100%';
 MainPageButtonEight.style.right = '0';
@@ -150,7 +150,7 @@ MainPageButtonEight.style.top = '0';
 menu.insertBefore(MainPageButtonEight, menu.lastChild);
 
 var MainPageButtonNine = document.createElement('button');
-MainPageButtonNine.innerHTML = ' ';
+MainPageButtonNine.innerHTML = 'Blank';
 MainPageButtonNine.style.fontSize = '15px';
 MainPageButtonNine.style.width = '100%';
 MainPageButtonNine.style.right = '0';
@@ -180,8 +180,8 @@ MainPageButtonSix.onclick = function () {var a=window.open('about:blank').docume
 
 MainPageButtonSeven.onclick = function () {void(open('http://tinyurl.com/create.php?url=%27+encodeURIComponent(location.href)))};
 
-MainPageButtonEight.onclick = function () {};
-MainPageButtonNine.onclick = function () {};
+MainPageButtonEight.onclick = function () {alert('Blank Button')};
+MainPageButtonNine.onclick = function () {alert('Blank Button')};
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
