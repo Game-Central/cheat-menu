@@ -178,10 +178,10 @@ MainPageButtonFive.onclick = function () {window.open('https://www.onlinetextedi
 
 MainPageButtonSix.onclick = function () {var a=window.open('about:blank').document;a.write('<!DOCTYPE html><html><head><title> '+location.href+'</title><meta name="viewport" content="width=device-width" /></head><body></body></html>');a.close();var b=a.body.appendChild(a.createElement('pre'));b.style.overflow='auto';b.style.whiteSpace='pre-wrap';b.appendChild(a.createTextNode(document.documentElement.innerHTML))};
 
-MainPageButtonSeven.onclick = function () {void(open('http://tinyurl.com/create.php?url=%27+encodeURIComponent(location.href)))};
+MainPageButtonSeven.onclick = function () {var win;win = window.open('http://tinyurl.com/create.php?url='+encodeURIComponent(location.href))};
 
-MainPageButtonEight.onclick = function () {alert('Blank Button')};
-MainPageButtonNine.onclick = function () {alert('Blank Button')};
+MainPageButtonEight.onclick = function () {alert('Blank Button');};
+MainPageButtonNine.onclick = function () {alert('Blank Button');};
 
 function menuOpenClose() {
   if (menuvalue.value === '1') {
