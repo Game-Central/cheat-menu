@@ -159,6 +159,57 @@ menu.insertBefore(MainPageButtonNine, menu.lastChild);
 
 
 
+
+var MainPageButtonTen = document.createElement('button');
+MainPageButtonTen.innerHTML = 'Blank';
+MainPageButtonTen.style.fontSize = '15px';
+MainPageButtonTen.style.width = '100%';
+MainPageButtonTen.style.right = '0';
+MainPageButtonTen.style.top = '0';
+menu.insertBefore(MainPageButtonTen, menu.lastChild);
+
+var MainPageButtonEleven = document.createElement('button');
+MainPageButtonEleven.innerHTML = 'Blank';
+MainPageButtonEleven.style.fontSize = '15px';
+MainPageButtonEleven.style.width = '100%';
+MainPageButtonEleven.style.right = '0';
+MainPageButtonEleven.style.top = '0';
+menu.insertBefore(MainPageButtonEleven, menu.lastChild);
+
+var MainPageButtonTwelve = document.createElement('button');
+MainPageButtonTwelve.innerHTML = 'Blank';
+MainPageButtonTwelve.style.fontSize = '15px';
+MainPageButtonTwelve.style.width = '100%';
+MainPageButtonTwelve.style.right = '0';
+MainPageButtonTwelve.style.top = '0';
+menu.insertBefore(MainPageButtonTwelve, menu.lastChild);
+
+var MainPageButton13 = document.createElement('button');
+MainPageButton13.innerHTML = 'Blank';
+MainPageButton13.style.fontSize = '15px';
+MainPageButton13.style.width = '100%';
+MainPageButton13.style.right = '0';
+MainPageButton13.style.top = '0';
+menu.insertBefore(MainPageButton13, menu.lastChild);
+
+var MainPageButton14 = document.createElement('button');
+MainPageButton14.innerHTML = 'Blank';
+MainPageButton14.style.fontSize = '15px';
+MainPageButton14.style.width = '100%';
+MainPageButton14.style.right = '0';
+MainPageButton14.style.top = '0';
+menu.insertBefore(MainPageButton14, menu.lastChild);
+
+var MainPageButton15 = document.createElement('button');
+MainPageButton15.innerHTML = 'Blank';
+MainPageButton15.style.fontSize = '15px';
+MainPageButton15.style.width = '100%';
+MainPageButton15.style.right = '0';
+MainPageButton15.style.top = '0';
+menu.insertBefore(MainPageButton15, menu.lastChild);
+
+
+
 /* Menu Button Clicked */
 
 MainPageButtonOne.onclick = function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);};
